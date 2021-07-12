@@ -5,10 +5,9 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="icon" href="./img/favicon.ico">
-  <link rel="icon" href="" type="image/svg+xml">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link href="./css/normalize.css" rel="stylesheet">
-  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/normalize.min.css" rel="stylesheet">
+  <link href="./css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -16,7 +15,7 @@
 
     <header class="main-header">
       <a class="main-header-logo" href="#">
-        <img src="./img/logo.svg" width="138px" height="70px" alt="Логотип Седона">
+        <img src="./img/logo.svg" width="138" height="70" alt="Логотип Седона">
       </a>
       <nav class="main-navigation">
         <ul class="site-navigation">
@@ -30,20 +29,20 @@
             <a class="site-navigation-link" href="#">Карта штата</a>
           </li>
           <li class="site-navigation-item">
-            <a class="site-navigation-link" href="catalog.html">Гостиницы</a>
+            <a class="site-navigation-link site-navigation-link--active" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
-
     </header>
 
     <main class="container">
+
       <section class="filters">
         <h2 class="visually-hidden">Фильтр</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <div class="filter-container">
             <section class="filter-group">
-              <legend class="filter-group-legend legend-first">Инфраструктура:</legend>
+              <h3 class="filter-group-legend legend-first">Инфраструктура:</h3>
               <ul class="filters-item">
                 <li class="filter-option checkbox">
                   <input class="checkbox-input visually-hidden" type="checkbox" name="bassein" id="infra-bassein"
@@ -62,7 +61,7 @@
             </section>
 
             <section class="filter-group">
-              <legend class="filter-group-legend legend-second">Тип жилья:</legend>
+              <h3 class="filter-group-legend legend-second">Тип жилья:</h3>
               <ul class="filters-item filters-item-second">
                 <li class="filter-option checkbox">
                   <input class="checkbox-input visually-hidden" type="checkbox" name="gostinica" id="tip-gostinica"
@@ -81,7 +80,7 @@
             </section>
 
             <section class="filter-group filter-group-third">
-              <legend class="filter-group-legend legend-third">Стоимость в сутки,₽:</legend>
+              <h3 class="filter-group-legend legend-third">Стоимость в сутки,₽:</h3>
               <div class="filter-price-container">
                 <div class="filter-price">
                   <label class="filter-price-label" for="min-price">От</label>
@@ -106,7 +105,6 @@
         </form>
       </section>
 
-
       <section class="sorting">
         <div class="sorting-sort">
           <h2 class="sorting-found">Найдено: 3</h2>
@@ -122,7 +120,6 @@
               <a class="sorting-list-link" href="#">По рейтингу</a>
             </li>
           </ul>
-
           <ul class="sorting-list sorting-list-orders">
             <li class="sorting-list-item sorting-list-item-order">
               <a class="sorting-order sorting-order-current" href="#">
@@ -146,11 +143,11 @@
         <ul class="catalog-list">
           <li class="catalog-list-item catalog-list-item-first">
             <a class="hotel-photo" href="#">
-              <img src="./img/amara.jpg" width="135px" height="90px" alt="AMARA RESORT & SPA">
+              <img src="./img/amara.jpg" width="135" height="90" alt="AMARA RESORT & SPA">
             </a>
             <div class="hotel-info">
-              <a class="hotel-link" href="#">AMARA RESORT & SPA</a>
-              <p class="hotel-price">Гостиница От 4000 ₽</p>
+              <a class="hotel-link" href="#">Amara Resort & SPA</a>
+              <p class="hotel-price"><span class="hotel-price-text">Гостиница</span> От 4000 ₽</p>
               <div class="hotel-links-container">
                 <a class="details-link" href="#">Подробнее</a>
                 <a class="reservation-link" href="#">Забронировать</a>
@@ -160,14 +157,13 @@
               <p class="rating-item">Рейтинг: 8,5</p>
             </div>
           </li>
-
           <li class="catalog-list-item">
             <a class="hotel-photo" href="#">
-              <img src="./img/desert.jpg" width="135px" height="90px" alt="DESERT QUAIL INN">
+              <img src="./img/desert.jpg" width="135" height="90" alt="DESERT QUAIL INN">
             </a>
             <div class="hotel-info">
-              <a class="hotel-link" href="#">DESERT QUAIL INN</a>
-              <p class="hotel-price">Мотель От 3000 ₽</p>
+              <a class="hotel-link" href="#">Desert quail inn</a>
+              <p class="hotel-price"><span class="hotel-price-text">Мотель</span> От 3000 ₽</p>
               <div class="hotel-links-container">
                 <a class="details-link" href="#">Подробнее</a>
                 <a class="reservation-link" href="#">Забронировать</a>
@@ -177,14 +173,13 @@
               <p class="rating-item">Рейтинг: 8,9</p>
             </div>
           </li>
-
           <li class="catalog-list-item">
             <a class="hotel-photo" href="#">
-              <img src="img/Villas.jpg" width="135px" height="90px" alt="VILLAS AT POCO DIABLO">
+              <img src="img/villas.jpg" width="135" height="90" alt="VILLAS AT POCO DIABLO">
             </a>
             <div class="hotel-info">
-              <a class="hotel-link" href="#">VILLAS AT POCO DIABLO</a>
-              <p class="hotel-price">Апартаменты От 2000 ₽</p>
+              <a class="hotel-link" href="#">Villas at poco diablo</a>
+              <p class="hotel-price"><span class="hotel-price-text">Апартаменты</span> От 2000 ₽</p>
               <div class="hotel-links-container">
                 <a class="details-link" href="#">Подробнее</a>
                 <a class="reservation-link" href="#">Забронировать</a>
@@ -196,7 +191,6 @@
           </li>
         </ul>
       </section>
-
     </main>
 
     <footer class="main-footer">
@@ -206,6 +200,7 @@
       </section>
 
       <section class="footer-social">
+        <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="messengers">
           <li class="messengers-item">
             <a class="messengers-link messengers-link--tw" href="#" aria-label="Ссылка на Твиттер"></a>
@@ -220,9 +215,10 @@
       </section>
 
       <section class="academy">
+        <h2 class="visually-hidden">Копирайт</h2>
         <p class="footer-copyright">
           Website by
-          <a class="footer-link-academy" href="https://htmlacademy.ru">
+          <a class="footer-link-academy" href="https://htmlacademy.ru/intensive/htmlcss">
             <svg class="footer-svg-academy" width="115" height="33" viewBox="0 0 115 33" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M0 12.8691V15.4429H2.45789V12.8691H0Z" />
@@ -253,7 +249,8 @@
         </p>
       </section>
     </footer>
-    <script src="./js/script.js"> </script>
+  </div>
+  <script src="./js/script.min.js"></script>
 </body>
 
 </html>

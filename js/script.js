@@ -10,9 +10,7 @@ if (search) {
     });
 }
 
-
 if (sortLinks) {
-    console.log(sortLinks);
     sortLinks.forEach(function(elem){
         elem.addEventListener("click", function(evt){
             evt.preventDefault();
