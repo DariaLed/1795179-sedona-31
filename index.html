@@ -7,7 +7,7 @@
   <link rel="icon" href="./img/favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="./css/normalize.min.css" rel="stylesheet">
-  <link href="./css/style.min.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body class="page-body page-body--index">
@@ -41,7 +41,7 @@
 
       <section class="title">
         <h2 class="visually-hidden">Визитная карточка Седоны</h2>
-        <img src="./img/welcome.svg" alt="Welcome to the gorgeous SEDONA Because the grand canyon sucks">
+        <img src="./img/welcome.svg" width="456" height="360" alt="Welcome to the gorgeous SEDONA Because the grand canyon sucks">
       </section>
 
       <section class="features">
@@ -119,7 +119,7 @@
               <label class="arrival-label" for="arrival-date">Дата заезда:</label>
               <div class="arrival-date-form">
                 <input class="arrival-input" id="arrival-date" type="text" name="date" placeholder="24 апреля 2017">
-                <a class="calendar-btn" href="#">
+                <button class="calendar-btn" type="button" aria-label="Открыть календарь">
                   <svg class="calendar arrival-calendar" width="21" height="23" viewBox="0 0 21 23" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -127,14 +127,14 @@
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z" />
                   </svg>
-                </a>
+                </button>
               </div>
             </div>
             <div class="form-item-container form-item-container-second">
               <label class="arrival-label" for="departure-date">Дата выезда:</label>
               <div class="arrival-date-form">
                 <input class="arrival-input" id="departure-date" name="date" placeholder="4 июля 2017">
-                <a class="calendar-btn" href="#">
+                <button class="calendar-btn" type="button" aria-label="Открыть календарь">
                   <svg class="calendar arrival-calendar" width="21" height="23" viewBox="0 0 21 23" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -142,46 +142,46 @@
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z" />
                   </svg>
-                </a>
+                </button>
               </div>
             </div>
             <div class="form-number-wrapper">
               <div class="form-number">
                 <label class="number-label" for="number-first">Взрослые:</label>
                 <div class="form-number-container">
-                  <a class="number-link" href="#">
+                  <button class="number-link" aria-label="Уменьшить на 1" type="button">
                     <svg class="number-link-sign" width="12" height="3" viewBox="0 0 12 3" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <rect width="12" height="3" />
                     </svg>
-                  </a>
+                  </button>
                   <input class="form-number-input" type="text" name="number" id="number-first" value="2">
-                  <a class="number-link" href="#">
+                  <button class="number-link" aria-label="Увеличить на 1" type="button">
                     <svg class="number-link-sign" width="11" height="11" viewBox="0 0 11 11" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" />
                     </svg>
-                  </a>
+                  </button>
                 </div>
               </div>
               <div class="form-number">
                 <label class="number-label number-label--second" for="number-second">Дети:</label>
                 <div class="form-number-container">
-                  <a class="number-link" href="#">
+                  <button class="number-link" aria-label="Уменьшить на 1" type="button">
                     <svg class="number-link-sign" width="12" height="3" viewBox="0 0 12 3" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <rect width="12" height="3" />
                     </svg>
-                  </a>
+                  </button>
                   <input class="form-number-input" type="text" name="number" id="number-second" value="0">
-                  <a class="number-link" href="#">
+                  <button class="number-link" aria-label="Увеличить на 1" type="button">
                     <svg class="number-link-sign" width="11" height="11" viewBox="0 0 11 11" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" />
                     </svg>
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -193,7 +193,7 @@
       <section class="map">
         <h2 class="visually-hidden">Карта проезда</h2>
         <div class="map-img-container">
-          <img src="./img/map.jpg" alt="Карта проезда">
+          <img src="./img/map.jpg" width="1199" height="594" alt="Карта проезда">
         </div>
         <div class="google-map-container">
           <iframe class="google-map"

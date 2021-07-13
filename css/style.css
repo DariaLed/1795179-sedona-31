@@ -24,6 +24,8 @@
   --main-footer: rgba(255, 255, 255, 0.9);
   --hotel-link: rgba(0, 0, 0, 0.3);
   --nav-active: rgba(118, 99, 87, 1);
+  --page-body: rgba(0, 1, 1, 0.25);
+  --arival-input: #EBEBEB;
 }
 
 body {
@@ -60,6 +62,7 @@ a {
   width: 1200px;
   margin: 0 auto;
   background-color: var(--basic-white);
+  box-shadow: 0px 5px 15px var(--page-body);
 }
 
 .main-header {
@@ -79,6 +82,7 @@ a {
   line-height: 26px;
   color: var(--basic-black);
   background-color: var(--basic-white);
+  font-weight: 700;
 }
 
 .site-navigation {
@@ -133,8 +137,8 @@ a {
   background-image: url("../img/bg.jpg");
   background-size: cover;
   background-color: var(--basic-extra-dark);
-  padding-top: 75px;
-  padding-bottom: 76px;
+  padding-top: 71px;
+  padding-bottom: 72px;
   position: relative;
 }
 
@@ -174,6 +178,7 @@ a {
   width: 519px;
   text-align: center;
   text-transform: uppercase;
+  color: var( --basic-extra-dark);
 }
 
 .features-list {
@@ -211,6 +216,7 @@ a {
   line-height: 21px;
   width: 160px;
   text-align: center;
+  color: var(--basic-extra-dark);
 }
 
 .features-text {
@@ -220,6 +226,7 @@ a {
   line-height: 21px;
   width: 261px;
   text-align: center;
+  color: var(--basic-extra-dark);
 }
 
 .features-list-item--spec {
@@ -250,8 +257,13 @@ a {
   text-align: center;
 }
 
+.features-list-item--spec .features-number{
+  color: var(--basic-white);
+}
+
 .features-list-item--spec .features-text {
   width: 312px;
+  color: var(--basic-white);
 }
 
 .features-list-item--second .features-list-wrap::after {
@@ -442,6 +454,9 @@ a {
   right: 9px;
   top: 7px;
   display: block;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 .arrival-calendar {
@@ -469,6 +484,10 @@ a {
   height: 38px;
   border: 2px solid var(--basic-grey);
   text-transform: uppercase;
+}
+
+.arrival-input:hover{
+background: var(--arival-input);
 }
 
 .arrival-input:focus {
@@ -507,6 +526,7 @@ a {
   background: var(--basic-grey);
   justify-content: center;
   align-items: center;
+  border: none;
 }
 
 .number-label {
@@ -604,8 +624,7 @@ a {
 
 .main-footer {
   list-style: none;
-  height: 120px;
-  padding: 0;
+  padding: 0 0 37px;
   margin: 0;
   background: var(--main-footer);
   display: grid;
@@ -628,7 +647,7 @@ a {
 }
 
 .page-body--index .lattice {
-  margin: 16px 0 15px 167px;
+  margin: 22px 0 9px 167px;
 }
 
 .footer-phone {
@@ -732,12 +751,13 @@ a {
 }
 
 .filters {
-  padding: 0;
+  padding: 0 0 7px;
   margin: 0;
   color: var(--basic-black);
   background-image: url("../img/background2.png");
   background-repeat: no-repeat;
-  height: 217px;
+  background-color: var(--basic-blue);
+  background-size: cover;
 }
 
 .filter-container {
@@ -747,7 +767,7 @@ a {
 
 .filter-group-third {
   margin-left: auto;
-  padding: 26px 74px 0 0;
+  padding: 25px 74px 0 0;
 }
 
 .filter-group-legend {
@@ -758,12 +778,17 @@ a {
 
 .legend-first {
   padding-left: 71px;
-  padding-top: 26px;
+  padding-top: 9px;
 }
 
 .legend-second {
-  padding-top: 25px;
+  padding-top: 9px;
   padding-left: 118px;
+}
+
+.legend-third{
+  margin: 0 0 12px;
+  padding: 0;
 }
 
 .filters-item {
@@ -805,12 +830,19 @@ a {
   color: var(--basic-extra-grey);
 }
 
+.checkbox-input:disabled+.checkbox-label::after {
+  background-image: url("../img/checkbox-off-disabled.svg");
+}
+
+.checkbox-input:checked:disabled+.checkbox-label::after {
+  background-image: url("../img/checkbox-on-disabled.svg");
+}
+
 .filter-price-container {
   display: flex;
   width: 312px;
   height: 32px;
   border: 2px solid var(--basic-white);
-  margin-top: 11px;
   margin-bottom: 6px;
 }
 
@@ -914,7 +946,7 @@ a {
   background: none;
   color: var(--basic-white);
   width: 137px;
-  height: 36px;
+  padding: 8px 10px 8px 10px;
   margin: 28px 0 0 85px;
   text-transform: uppercase;
 }
@@ -963,7 +995,6 @@ a {
 .sorting-list-link {
   display: flex;
   background-color: transparent;
-  border: none;
   border-bottom: 1px dotted var(--special-blue);
   padding: 0;
   text-transform: uppercase;
@@ -975,12 +1006,13 @@ a {
   color: var(--special-blue);
 }
 
-.sorting-list-link:active {
-  color: var(--basic-black);
-}
-
 .sorting-list-link:focus {
   color: var(--special-blue);
+}
+
+.sorting-list-link:active {
+  color: var(--basic-black);
+  border-color: transparent;
 }
 
 .sorting-list-link-active {
