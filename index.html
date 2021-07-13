@@ -7,7 +7,7 @@
   <link rel="icon" href="./img/favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="./css/normalize.min.css" rel="stylesheet">
-  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page-body page-body--index">
@@ -118,7 +118,7 @@
             <div class="form-item-container">
               <label class="arrival-label" for="arrival-date">Дата заезда:</label>
               <div class="arrival-date-form">
-                <input class="arrival-input" id="arrival-date" type="text" name="date" placeholder="24 апреля 2017">
+                <input class="arrival-input arrival-date" id="arrival-date" type="text" name="date" placeholder="Укажите дату" value="24 апреля 2017" required>
                 <button class="calendar-btn" type="button" aria-label="Открыть календарь">
                   <svg class="calendar arrival-calendar" width="21" height="23" viewBox="0 0 21 23" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -133,7 +133,7 @@
             <div class="form-item-container form-item-container-second">
               <label class="arrival-label" for="departure-date">Дата выезда:</label>
               <div class="arrival-date-form">
-                <input class="arrival-input" id="departure-date" name="date" placeholder="4 июля 2017">
+                <input class="arrival-input departure-date" id="departure-date" name="date" placeholder="Укажите дату" value="4 июля 2017" required>
                 <button class="calendar-btn" type="button" aria-label="Открыть календарь">
                   <svg class="calendar arrival-calendar" width="21" height="23" viewBox="0 0 21 23" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -228,7 +228,7 @@
         <h2 class="visually-hidden">Копирайт</h2>
         <p class="footer-copyright">
           Website by
-          <a class="footer-link-academy" href="https://htmlacademy.ru/intensive/htmlcss">
+          <a class="footer-link-academy" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на сайт Академии">
             <svg class="footer-svg-academy" width="115" height="33" viewBox="0 0 115 33" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M0 12.8691V15.4429H2.45789V12.8691H0Z" />
